@@ -613,6 +613,12 @@ category("Libraries/Frameworks") {
       setTags("xml", "builder", "dsl")
       setPlatforms(JVM)
     }
+    link {
+      github = "lectra-tech/koson"
+      desc = "A concise and lightweight Kotlin DSL to build JSON objects and render their String representations"
+      setTags("json", "dsl", "builder")
+      setPlatforms(JVM)
+    }
   }
   subcategory("Validation") {
     link {
@@ -789,11 +795,11 @@ category("Libraries/Frameworks") {
       setTags("style", "linter")
       awesome()
     }
-	link {
+    link {
       github = "cqfn/diktat"
       desc = "Strict coding standard for Kotlin and a custom set of rules for detecting and autofixing code smells."
       setTags("style", "linter", "static-analysis", "check style", "code smell")
-      awesome()
+      setPlatforms(COMMON)
     }
     link {
       github = "jtransc/jtransc"
@@ -1147,6 +1153,12 @@ category("Libraries/Frameworks") {
       setTags("alexa", "amazon echo", "text to speech")
     }
     link {
+      github = "just-ai/jaicf-kotlin"
+      desc = "Kotlin framework for conversational voice assistants and chatbots development."
+      setTags("chatbot", "speech to text", "text to speech", "alexa", "google assistant", "actions on google", "voice")
+      setPlatforms(JVM, ANDROID)
+    }
+    link {
       github = "TicketmasterMobileStudio/actions-on-google-kotlin"
       desc = "Port of official Node.js SDK to Kotlin. Complete with all features and tests and nearly identical API."
       setTags("actions on google", "google assistant", "google home")
@@ -1395,6 +1407,7 @@ category("Libraries/Frameworks") {
       github = "DetachHead/kotlinxpath"
       desc = "A typesafe builder for Xpath with several useful helper functions that make Xpath easier to work with"
       setTags("xpath", "xpath-builder", "typesafe-builder", "multiplatform")
+      setPlatforms(COMMON, JVM, JS, NATIVE)
     }
   }
   subcategory("Extensions") {
@@ -1477,6 +1490,7 @@ category("Libraries/Frameworks") {
       github = "davidohana/kofiko-kotlin"
       desc = "Kofiko: Code-First configuration library. Lightweight, simple and minimal boilerplate."
       setTags("configuration", "environment-variables", "ini", "json", "env")
+      setPlatforms(JVM)
     }
   }
   subcategory("Graphics") {
@@ -1579,6 +1593,12 @@ category("Libraries/Frameworks") {
       github = "markaren/three.kt"
       desc = "Kotlin port of three.js JavaScript 3D library"
       setTags("opengl", "lwjgl3", "three-js")
+    }
+    link {
+      github = "JetBrains/skiko"
+      desc = "Kotlin Multiplatform bindings to Skia"
+      setPlatforms(JVM, NATIVE)
+      setTags("skia")
     }
   }
   subcategory("Data Science") {
@@ -1722,6 +1742,20 @@ category("Libraries/Frameworks") {
       desc = "Kotlin implementation of RSocket."
       setPlatforms(JVM, JS)
       setTags("rsocket", "rx", "reactive-streams")
+    }
+    link {
+      github = "Dynamium/EVCalc"
+      desc = "EVCalc is a calculation engine for mobile electric venicles (Electric scooters, electric unicycles, and so on) written in Kotlin."
+      setPlatforms(JVM)
+      setTags("evcalc", "dynamium", "calculation", "ev", "euc", "electric unicycles", "electric-scooters", "engine")
+    }
+  }
+  subcategory("API Clients") {
+    link {
+      github = "JetBrains/space-kotlin-sdk"
+      desc = "Kotlin client for JetBrains Space HTTP API"
+      setPlatforms(COMMON, JS, JVM)
+      awesome()
     }
   }
 }
