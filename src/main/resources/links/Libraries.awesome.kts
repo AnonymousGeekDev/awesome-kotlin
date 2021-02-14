@@ -318,7 +318,7 @@ category("Libraries/Frameworks") {
       setTags("test", "html", "template", "dom", "dsl", "parser", "webcrawler", "scraper", "ktor", "spring-boot")
     }
     link {
-      github = "krzema12/PlotAssert"
+      github = "krzema12/vis-assert"
       desc = "Test the shape of your functions!"
       setTags("test", "testing", "dsl", "ascii-art")
     }
@@ -403,6 +403,12 @@ category("Libraries/Frameworks") {
     link {
       github = "evant/kotlin-inject"
       setPlatforms(JVM)
+    }
+    link {
+      github = "corbella83/PopKorn"
+      desc = "Forget about modules and components. DI can be simple"
+      setTags("di", "dependency injection", "android", "multiplatform")
+      setPlatforms(ANDROID, COMMON, IOS, JS, JVM, NATIVE)
     }
   }
   subcategory("Coroutines") {
@@ -827,10 +833,16 @@ category("Libraries/Frameworks") {
       setTags("dsl", "scripting")
     }
     link {
-      github = "jmfayard/buildSrcVersions"
+      github = "jmfayard/refreshVersions"
       desc = "Better Gradle dependencies management inside the IDE. Search for available updates."
       setTags("gradle", "plugin", "build", "development", "libraries", "versions")
       awesome()
+    }
+    link {
+      github = "Kotlin/kotlin-interactive-shell"
+      desc = "Kotlin Language Interactive Shell"
+      setTags("shell")
+      setPlatforms(JVM)
     }
   }
   subcategory("Compiler Plugins") {
@@ -1023,8 +1035,18 @@ category("Libraries/Frameworks") {
       desc = "Modern Multiplatform Game Engine for Kotlin. Write games for the JVM, JavaScript, Android and iOS in no time using Kotlin."
       setTags("desktop", "android", "games", "game-dev")
     }
+    link {
+      github = "KogeLabs/Ockero"
+      desc = "Ockero: Kotlin OpenGl Game Engine"
+      setPlatforms(JVM)
+    }
   }
   subcategory("Misc") {
+    link {
+      github = "RationalityFrontline/kevent"
+      desc = "A powerful in-process event dispatcher based on Kotlin and Coroutines."
+      setTags("eventbus", "event-dispatcher", "event-driven", "publish–subscribe", "android", "swing", "javafx", "coroutines", "functional-programming")
+    }
     link {
       github = "themichailov/kache"
       desc = "Kotlin functions caching library, reducing count of function executions."
@@ -1298,6 +1320,12 @@ category("Libraries/Frameworks") {
       desc = "A wrapper for the Telegram Bot API written in Kotlin."
     }
     link {
+      github = "insanusmokrassar/TelegramBotAPI"
+      desc = "Kotlin Multiplatform library for type-safe work with Telegram Bot API"
+      setTags("telegram", "bot", "multiplatform", "Kotlin/JVM", "Kotlin/JS")
+      setPlatforms(COMMON, JVM, JS)
+    }
+    link {
       github = "aminography/PrimeCalendar"
       desc = "Provides all of the java.util.Calendar functionalities for Civil, Persian, Hijri, Japanese, etc, as well as their conversion to each other."
     }
@@ -1378,6 +1406,12 @@ category("Libraries/Frameworks") {
       desc = "Recursive descent parser combinator library"
       href = "https://github.com/fork-handles/forkhandles/tree/trunk/parser4k"
       setTags("parser", "parser-combinator", "recursive descent")
+      setPlatforms(JVM)
+    }
+    link {
+      github = "asm0dey/staks"
+      desc = "Extensible XML parser DSL, based on StAX"
+      setTags("XML", "StAX", "DSL", "parser")
       setPlatforms(JVM)
     }
   }
@@ -1667,6 +1701,13 @@ category("Libraries/Frameworks") {
       setTags("data science", "artificial-intelligence", "mathematical-optimization", "constraint-solving")
     }
     link {
+      github = "holgerbrandl/kalasim"
+      desc = "Discrete event simulator that enables complex, dynamic process models."
+      href = "https://www.kalasim.org"
+      setTags("data science", "state machine")
+      setPlatforms(JVM)
+    }
+    link {
       github = "cdietze/euklid"
       setPlatforms(COMMON, JS, JVM)
     }
@@ -1675,6 +1716,15 @@ category("Libraries/Frameworks") {
       desc = "A Kotlin multi-platform library for graph data structures"
       setTags("data-science")
       setPlatforms(JVM, JS, COMMON, NATIVE)
+    }
+    link {
+      github = "Kotlin/multik"
+      setTags("multidimensional array")
+      setPlatforms(JVM)
+    }
+    link {
+      github = "breandan/kaliningraph"
+      setPlatforms(JVM)
     }
   }
   subcategory("Command Line Interface") {
@@ -1749,6 +1799,12 @@ category("Libraries/Frameworks") {
       setPlatforms(JVM)
       setTags("evcalc", "dynamium", "calculation", "ev", "euc", "electric unicycles", "electric-scooters", "engine")
     }
+    link {
+      github = "agcom/knio2"
+      desc = "Kotlinx coroutines extensions for Java NIO.2"
+      setPlatforms(JVM)
+      setTags("io")
+    }
   }
   subcategory("API Clients") {
     link {
@@ -1756,6 +1812,40 @@ category("Libraries/Frameworks") {
       desc = "Kotlin client for JetBrains Space HTTP API"
       setPlatforms(COMMON, JS, JVM)
       awesome()
+    }
+    link {
+      github = "adamint/spotify-web-api-kotlin"
+      desc = "Spotify Web API wrapper for Kotlin/Android, JVM, JS, and Native targets."
+      setPlatforms(JVM, JS, ANDROID, NATIVE, COMMON)
+    }
+  }
+  subcategory("Internationalisation and Localization") {
+    link {
+      github = "cashapp/barber"
+      desc = "A type safe Kotlin JVM library for building up localized, fillable, themed documents using Mustache templating."
+      setTags("Mustache")
+      setPlatforms(JVM)
+    }
+    link {
+      github = "projectfluent/fluent-kotlin"
+      desc = "Kotlin tooling implementation of ProjectFluent. Read, write, and transform Fluent files."
+      setTags("L10n")
+      setPlatforms(JVM)
+    }
+  }
+  subcategory("Logging") {
+    link {
+      github = "Foso/Cabret-Log"
+      desc = "Method call logging for Kotlin Multiplatform"
+      setPlatforms(JVM, JS, ANDROID, NATIVE, IOS, COMMON)
+    }
+  }
+  subcategory("Mail") {
+    link {
+      github = "bluefireoly/SimpleKotlinMail"
+      desc = "A simple, modern and coroutine based Kotlin Email API, supporting both clientside and serverside projects."
+      setTags("mail", "smtp", "email", "mailserver")
+      setPlatforms(JVM)
     }
   }
 }
