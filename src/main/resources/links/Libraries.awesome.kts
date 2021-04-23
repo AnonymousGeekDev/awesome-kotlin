@@ -191,6 +191,12 @@ category("Libraries/Frameworks") {
       setTags("jdbc", "web", "di")
       setPlatforms(JVM)
     }
+    link {
+      github = "ButterCam/sisyphus"
+      desc = "Modern gRPC service framework based on Kotlin/Spring Boot with Message DSL/HTTP transcoding/Google AIP support."
+      setTags("web", "microservice", "grpc", "spring", "protobuf", "rest")
+      setPlatforms(JVM)
+    }
   }
   subcategory("Testing") {
     link {
@@ -684,6 +690,12 @@ category("Libraries/Frameworks") {
       awesome()
     }
     link {
+      github = "bloomberg/selekt"
+      href = "https://bloomberg.github.io/selekt"
+      desc = "Android SQL database library wrapping the community edition of SQLCipher, an SQLite extension that provides 256-bit AES encryption. Selekt realises the maximum concurrency offered by SQLite3."
+      setTags("android", "database", "sql", "sqlcipher", "sqlite")
+    }
+    link {
       github = "x2bool/kuery"
       desc = "Typesafe SQL with Kotlin."
       setTags("database", "sql", "type-safe builder")
@@ -817,6 +829,11 @@ category("Libraries/Frameworks") {
       desc = "Static code analysis for Kotlin."
       setTags("check style", "checkstyle")
       awesome()
+    }
+    link {
+      github = "facebookincubator/ktfmt"
+      desc = "Kotlin code formatter that reflows lines and always produces the same result."
+      setTags("formatter", "pretty print")
     }
     link {
       github = "mkohm/detekt-hint"
@@ -1382,6 +1399,12 @@ category("Libraries/Frameworks") {
       setTags("ipc", "extension", "misc")
       setPlatforms(JVM)
     }
+    link {
+      github = "ivanisidrowu/KtRssReader"
+      desc = "Kotlin library for parsing RSS feeds"
+      setTags("rss", "feed")
+      setPlatforms(JVM, ANDROID)
+    }
   }
   subcategory("Parsers") {
     link {
@@ -1442,6 +1465,11 @@ category("Libraries/Frameworks") {
       desc = "A typesafe builder for Xpath with several useful helper functions that make Xpath easier to work with"
       setTags("xpath", "xpath-builder", "typesafe-builder", "multiplatform")
       setPlatforms(COMMON, JVM, JS, NATIVE)
+    }
+    link {
+      github = "ionspin/kotlin-multiplatform-libsodium"
+      desc = "Kotlin multiplatform wrapper for Libsodium cryptographic library."
+      setTags("multiplatform", "libsodium", "cryptography")
     }
   }
   subcategory("Extensions") {
@@ -1834,6 +1862,12 @@ category("Libraries/Frameworks") {
     }
   }
   subcategory("Logging") {
+    link {
+      github = "LighthouseGames/KmLogging"
+      desc = "Kotlin multiplatform logging. High performance, composable and simple to use."
+      setPlatforms(ANDROID, NATIVE, IOS, COMMON, JVM, JS)
+      setTags("logging", "multiplatform")
+    }
     link {
       github = "Foso/Cabret-Log"
       desc = "Method call logging for Kotlin Multiplatform"
